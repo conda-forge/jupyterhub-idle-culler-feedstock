@@ -1,5 +1,5 @@
 {% set name = "jupyterhub-idle-culler" %}
-{% set version = "1.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d9e58baa48cba6a79b83c43d8dcab7b758a66c2c4a9bc8394f7b43e03d891621
+  sha256: d80822982d2590cb876d01849cee028943fdbdcc991c0f02fce45af3f40dd415
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
     - cull_idle_servers.py = jupyterhub_idle_culler:main
@@ -39,8 +39,7 @@ about:
   license_family: BSD
   # Opened license packaging PR upstream: https://github.com/jupyterhub/jupyterhub-idle-culler/pull/3
   license_file: COPYING.md
-  summary:
-    JupyterHub service to cull idle servers and users
+  summary: JupyterHub service to cull idle servers and users
   description: |
     jupyterhub-idle-culler provides a JupyterHub service to cull and shut down
     idle notebook servers and users on a JupyterHub deployment.
