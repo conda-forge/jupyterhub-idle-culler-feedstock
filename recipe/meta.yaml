@@ -1,13 +1,13 @@
 {% set name = "jupyterhub-idle-culler" %}
-{% set version = "1.4.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 114fe717cefb65fb0bd6d817592f69c72d7068f3e5a41559470253d419c747d8
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: a377454a115eb04da9beec5f8e9b20023f94f0259c12f1a590c44122d4bebd0b
 
 build:
   number: 0
