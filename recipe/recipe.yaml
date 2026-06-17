@@ -9,7 +9,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/j/jupyterhub-idle-culler/jupyterhub-idle-culler-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/j/jupyterhub-idle-culler/jupyterhub_idle_culler-${{ version }}.tar.gz
   sha256: a377454a115eb04da9beec5f8e9b20023f94f0259c12f1a590c44122d4bebd0b
 
 build:
