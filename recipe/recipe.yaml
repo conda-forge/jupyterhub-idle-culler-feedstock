@@ -31,11 +31,13 @@ requirements:
     - packaging
     - tornado
     - python-dateutil
+    - traitlets
 
 tests:
   - python:
       imports:
         - jupyterhub_idle_culler
+      pip_check: true
       python_version:
         - ${{ python_min }}.*
         - "3.14"
