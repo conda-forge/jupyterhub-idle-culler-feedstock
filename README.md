@@ -11,11 +11,8 @@ Summary: JupyterHub service to cull idle servers and users
 
 Development: https://github.com/jupyterhub/jupyterhub-idle-culler
 
-Documentation: https://github.com/jupyterhub/jupyterhub-idle-culler/blob/master/README.rst
-
 jupyterhub-idle-culler provides a JupyterHub service to cull and shut down
 idle notebook servers and users on a JupyterHub deployment.
-
 
 Current build status
 ====================
